@@ -1,0 +1,13 @@
+[Version]
+Version=15.0
+[Designs]
+archProject=archProject.adf
+[Settings]
+Active=archProject
+[Expand]
+archproject=1
+[Browser]
+sort=order
+mode=none
+[Order]
+order=1

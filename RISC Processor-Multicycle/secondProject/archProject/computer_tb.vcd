@@ -1,0 +1,827 @@
+$date
+Sat Jun 22 23:18:21 2024
+$end
+$version
+Aldec HDL Simulator Version 15.0.261
+$end
+$timescale
+1 ps
+$end
+
+$scope module testbench $end
+$var reg 1 ! clk $end
+$var reg 1 " reset $end
+$var reg 16 # data_in [15:0] $end
+$var reg 1 $ memRead $end
+$var reg 1 % memWrite $end
+$var reg 16 & data_out_instruction [15:0] $end
+$var reg 16 ' data_out [15:0] $end
+$var reg 16 ( out2 [15:0] $end
+$var reg 16 ) address_data [15:0] $end
+$var reg 4 * state [3:0] $end
+$var reg 16 + ALUresult [15:0] $end
+$var reg 2 , ALUop [1:0] $end
+$var parameter 32 - CLK_PERIOD [31:0] $end
+$var parameter 32 . SIM_TIME [31:0] $end
+
+$scope module uut $end
+$var wire 1 / clk $end
+$var wire 1 0 reset $end
+$var wire 16 1 address_inst [15:0] $end
+$var wire 16 2 data_out_instruction [15:0] $end
+$var wire 16 3 data_out [15:0] $end
+$var wire 16 4 out2 [15:0] $end
+$var wire 16 5 address_data [15:0] $end
+$var wire 1 6 MemRead $end
+$var wire 1 7 MemWrite $end
+$var wire 4 8 state [3:0] $end
+$var wire 16 9 ALUresult [15:0] $end
+$var wire 2 : ALUop [1:0] $end
+$var wire 16 ; data_in [15:0] $end
+
+$scope module im $end
+$var wire 16 1 address [15:0] $end
+$var reg 16 < data [15:0] $end
+$var parameter 32 = WIDTH [31:0] $end
+$upscope $end
+
+
+$scope module dm $end
+$var wire 1 / clk $end
+$var wire 16 5 address [15:0] $end
+$var wire 16 ; dataIn [15:0] $end
+$var wire 1 6 memRead $end
+$var wire 1 7 memWrite $end
+$var reg 16 > dataOut [15:0] $end
+$var parameter 32 ? WIDTH [31:0] $end
+$upscope $end
+
+
+$scope module cpu $end
+$var wire 1 / clk $end
+$var wire 1 0 reset $end
+$var wire 16 1 address_instruction [15:0] $end
+$var wire 16 2 data_out_instruction [15:0] $end
+$var wire 16 ; data_in [15:0] $end
+$var wire 16 3 data_out [15:0] $end
+$var wire 16 4 out2 [15:0] $end
+$var wire 16 5 address_data [15:0] $end
+$var wire 1 7 MemWrite $end
+$var wire 1 6 MemRead $end
+$var wire 4 8 state [3:0] $end
+$var wire 16 9 ALUresult [15:0] $end
+$var wire 2 : ALUop [1:0] $end
+$var wire 16 @ instruction [15:0] $end
+$var wire 16 A regOut1 [15:0] $end
+$var wire 16 B regOut2 [15:0] $end
+$var wire 16 C aluResult [15:0] $end
+$var wire 16 D memDataOut [15:0] $end
+$var wire 16 E extendedImmediate [15:0] $end
+$var wire 16 F muxAluSrc2Out [15:0] $end
+$var wire 16 G muxMemRegOut [15:0] $end
+$var wire 16 H pc [15:0] $end
+$var wire 16 I nextPC [15:0] $end
+$var wire 16 J branchAddr [15:0] $end
+$var wire 16 K jumpAddr [15:0] $end
+$var wire 1 L opcode [3] $end
+$var wire 1 M opcode [2] $end
+$var wire 1 N opcode [1] $end
+$var wire 1 O opcode [0] $end
+$var wire 1 P regDst $end
+$var wire 1 Q regSrc2 $end
+$var wire 2 R aluControl [1:0] $end
+$var wire 2 S regSrcSel1 [1:0] $end
+$var wire 2 T pcSel [1:0] $end
+$var wire 2 U memReg [1:0] $end
+$var wire 2 V regSrc1 [1:0] $end
+$var wire 1 W regWrite $end
+$var wire 1 X aluSrc2 $end
+$var wire 1 Y memRead $end
+$var wire 1 Z memWrite $end
+$var wire 1 [ IRwrite $end
+$var wire 1 \ regDest $end
+$var wire 1 ] PCwrite $end
+$var wire 1 ^ sign_ext $end
+$var wire 1 _ address_selection $end
+$var wire 1 ` data_in_selection $end
+$var wire 1 a select_type $end
+$var wire 1 b PCwriteUncond $end
+$var wire 1 c EN $end
+$var wire 1 d SEL $end
+$var wire 1 e zero $end
+$var wire 1 f overflow $end
+$var wire 1 g negative $end
+$var wire 1 h pcWriteEn $end
+$var wire 1 i mode $end
+
+$scope module control $end
+$var wire 1 L opcode [3] $end
+$var wire 1 M opcode [2] $end
+$var wire 1 N opcode [1] $end
+$var wire 1 O opcode [0] $end
+$var wire 1 i mode $end
+$var wire 1 / clk $end
+$var wire 1 0 rst $end
+$var reg 1 j regWrite $end
+$var reg 1 k aluSrc2 $end
+$var reg 1 l memRead $end
+$var reg 1 m memWrite $end
+$var reg 1 n IRwrite $end
+$var reg 1 o regSrc2 $end
+$var reg 1 p regDest $end
+$var reg 2 q aluControl [1:0] $end
+$var reg 1 r sign_ext $end
+$var reg 1 s address_selection $end
+$var reg 1 t data_in_selection $end
+$var reg 1 u select_type $end
+$var reg 1 v PCwriteUncond $end
+$var reg 1 w EN $end
+$var reg 1 x SEL $end
+$var reg 2 y regSrc1 [1:0] $end
+$var reg 2 z PC_selection [1:0] $end
+$var reg 2 { memReg [1:0] $end
+$var reg 4 | state [3:0] $end
+$var reg 1 } jmp $end
+$var parameter 32 ~ InstructionFetch [31:0] $end
+$var parameter 32 !! InstructionDecode [31:0] $end
+$var parameter 32 "! AddressComputation [31:0] $end
+$var parameter 32 #! LoadAccess [31:0] $end
+$var parameter 32 $! StoreAccess [31:0] $end
+$var parameter 32 %! ALUcomputationI [31:0] $end
+$var parameter 32 &! ALUcomputationR [31:0] $end
+$var parameter 32 '! LBuResultStore [31:0] $end
+$var parameter 32 (! LBsResultStore [31:0] $end
+$var parameter 32 )! ALUResultStore [31:0] $end
+$var parameter 32 *! BranchCompletion [31:0] $end
+$var parameter 32 +! SetValue [31:0] $end
+$var parameter 32 ,! Call [31:0] $end
+$var parameter 32 -! Return [31:0] $end
+$upscope $end
+
+
+$scope module dp $end
+$var wire 1 ` data_in_selection $end
+$var wire 1 Q RegSrc2 $end
+$var wire 1 W RegWrite $end
+$var wire 1 [ IRwrite $end
+$var wire 1 ] PCwrite $end
+$var wire 1 0 reset $end
+$var wire 1 ^ sign_ext $end
+$var wire 1 / clk $end
+$var wire 1 \ RegDest $end
+$var wire 1 X ALUsrc2 $end
+$var wire 1 _ address_selection $end
+$var wire 1 d SEL $end
+$var wire 1 c EN $end
+$var wire 16 2 data_out_instruction [15:0] $end
+$var wire 16 3 data_out [15:0] $end
+$var wire 16 4 out2 [15:0] $end
+$var wire 2 U MemReg [1:0] $end
+$var wire 2 T PC_selection [1:0] $end
+$var wire 2 : ALUop [1:0] $end
+$var wire 2 V RegSrc1 [1:0] $end
+$var wire 1 L opcode [3] $end
+$var wire 1 M opcode [2] $end
+$var wire 1 N opcode [1] $end
+$var wire 1 O opcode [0] $end
+$var wire 1 i mode $end
+$var wire 16 5 address_data [15:0] $end
+$var wire 16 1 address_instruction [15:0] $end
+$var wire 16 ; data_in [15:0] $end
+$var wire 1 e z $end
+$var wire 1 g n $end
+$var wire 1 f v $end
+$var wire 16 C ALU_result [15:0] $end
+$var wire 3 .! Rs1 [2:0] $end
+$var wire 3 /! Rs2 [2:0] $end
+$var wire 3 0! Rd [2:0] $end
+$var wire 15 1! upper_bits [14:0] $end
+$var wire 16 2! pc_temp [15:0] $end
+$var wire 16 3! instruction [15:0] $end
+$var wire 16 4! BUS1 [15:0] $end
+$var wire 16 5! BUS2 [15:0] $end
+$var wire 16 6! B_operand [15:0] $end
+$var wire 16 7! A_operand [15:0] $end
+$var wire 16 8! extended_immediate [15:0] $end
+$var wire 16 9! ALU_operand1 [15:0] $end
+$var wire 16 :! ALU_operand2 [15:0] $end
+$var wire 16 ;! jumpTargetAddress [15:0] $end
+$var wire 16 <! PCtype [15:0] $end
+$var wire 16 =! ALU_result_buffer [15:0] $end
+$var wire 16 >! incrementPC [15:0] $end
+$var wire 16 ?! BTA [15:0] $end
+$var wire 16 @! MDR_out [15:0] $end
+$var wire 16 A! Register_result [15:0] $end
+$var wire 9 B! immediate_combined [8:0] $end
+$var wire 3 C! Rs1_regfile [2:0] $end
+$var wire 3 D! Rs2_regfile [2:0] $end
+$var wire 3 E! Rd_regfile [2:0] $end
+$var wire 16 F! nextPC [15:0] $end
+
+$scope module IR $end
+$var wire 1 / clk $end
+$var wire 1 [ writeEn $end
+$var wire 1 0 reset $end
+$var wire 16 2 in [15:0] $end
+$var reg 16 G! out [15:0] $end
+$upscope $end
+
+
+$scope module A $end
+$var wire 1 / clk $end
+$var wire 1 H! writeEn $end
+$var wire 1 0 reset $end
+$var wire 16 4! in [15:0] $end
+$var reg 16 I! out [15:0] $end
+$upscope $end
+
+
+$scope module B $end
+$var wire 1 / clk $end
+$var wire 1 J! writeEn $end
+$var wire 1 0 reset $end
+$var wire 16 5! in [15:0] $end
+$var reg 16 K! out [15:0] $end
+$upscope $end
+
+
+$scope module pc $end
+$var wire 1 / clk $end
+$var wire 1 ] writeEn $end
+$var wire 1 0 reset $end
+$var wire 16 >! in [15:0] $end
+$var reg 16 L! out [15:0] $end
+$upscope $end
+
+
+$scope module ALUout $end
+$var wire 1 / clk $end
+$var wire 1 M! writeEn $end
+$var wire 1 0 reset $end
+$var wire 16 C in [15:0] $end
+$var reg 16 N! out [15:0] $end
+$upscope $end
+
+
+$scope module MDR $end
+$var wire 1 / clk $end
+$var wire 1 O! writeEn $end
+$var wire 1 0 reset $end
+$var wire 16 3 in [15:0] $end
+$var reg 16 P! out [15:0] $end
+$upscope $end
+
+
+$scope module rf $end
+$var wire 1 / clk $end
+$var wire 1 W regWrite $end
+$var wire 3 E! regDst [2:0] $end
+$var wire 3 C! regSrc1 [2:0] $end
+$var wire 3 D! regSrc2 [2:0] $end
+$var wire 16 A! bus_w [15:0] $end
+$var reg 16 Q! out1 [15:0] $end
+$var reg 16 R! out2 [15:0] $end
+$upscope $end
+
+
+$scope module ext $end
+$var wire 9 B! immediate [8:0] $end
+$var wire 1 ^ sign_ext $end
+$var wire 1 L select_type $end
+$var reg 16 S! out [15:0] $end
+$upscope $end
+
+
+$scope module alu $end
+$var wire 2 : ALUop [1:0] $end
+$var wire 16 7! a [15:0] $end
+$var wire 16 6! b [15:0] $end
+$var wire 1 e zero $end
+$var wire 1 f overflow $end
+$var wire 1 g negative $end
+$var reg 16 T! result [15:0] $end
+$var reg 2 U! carry [1:0] $end
+$upscope $end
+
+
+$scope module RS1_mux $end
+$var wire 3 .! a [2:0] $end
+$var wire 3 V! b [2:0] $end
+$var wire 3 W! c [2:0] $end
+$var wire 3 X! d [2:0] $end
+$var wire 2 V s [1:0] $end
+$var reg 3 Y! out [2:0] $end
+$var parameter 32 Z! WIDTH [31:0] $end
+$upscope $end
+
+
+$scope module RS2_mux $end
+$var wire 3 0! a [2:0] $end
+$var wire 3 /! b [2:0] $end
+$var wire 1 Q select $end
+$var wire 3 D! out [2:0] $end
+$var parameter 32 [! WIDTH [31:0] $end
+$upscope $end
+
+
+$scope module Rd_mux $end
+$var wire 3 0! a [2:0] $end
+$var wire 3 \! b [2:0] $end
+$var wire 1 \ select $end
+$var wire 3 E! out [2:0] $end
+$var parameter 32 ]! WIDTH [31:0] $end
+$upscope $end
+
+
+$scope module ALUsrc2_mux $end
+$var wire 16 6! a [15:0] $end
+$var wire 16 8! b [15:0] $end
+$var wire 1 X select $end
+$var wire 16 :! out [15:0] $end
+$var parameter 32 ^! WIDTH [31:0] $end
+$upscope $end
+
+
+$scope module address_mem_mux $end
+$var wire 16 7! a [15:0] $end
+$var wire 16 =! b [15:0] $end
+$var wire 1 _ select $end
+$var wire 16 5 out [15:0] $end
+$var parameter 32 _! WIDTH [31:0] $end
+$upscope $end
+
+
+$scope module data_in_mux $end
+$var wire 16 6! a [15:0] $end
+$var wire 16 8! b [15:0] $end
+$var wire 1 ` select $end
+$var wire 16 ; out [15:0] $end
+$var parameter 32 `! WIDTH [31:0] $end
+$upscope $end
+
+
+$scope module write_mux $end
+$var wire 16 >! a [15:0] $end
+$var wire 16 @! b [15:0] $end
+$var wire 16 =! c [15:0] $end
+$var wire 16 a! d [15:0] $end
+$var wire 2 U s [1:0] $end
+$var reg 16 b! out [15:0] $end
+$var parameter 32 c! WIDTH [31:0] $end
+$upscope $end
+
+
+$scope module PC_mux $end
+$var wire 16 7! a [15:0] $end
+$var wire 16 ?! b [15:0] $end
+$var wire 16 ;! c [15:0] $end
+$var wire 16 >! d [15:0] $end
+$var wire 2 T s [1:0] $end
+$var reg 16 d! out [15:0] $end
+$var parameter 32 e! WIDTH [31:0] $end
+$upscope $end
+
+
+$scope module ext1 $end
+$var wire 9 B! immediate [8:0] $end
+$var wire 1 ^ sign_ext $end
+$var wire 1 f! select_type $end
+$var reg 16 g! out [15:0] $end
+$upscope $end
+
+
+$scope module ext2 $end
+$var wire 9 B! immediate [8:0] $end
+$var wire 1 ^ sign_ext $end
+$var wire 1 h! select_type $end
+$var reg 16 i! out [15:0] $end
+$upscope $end
+
+
+$scope module ext3 $end
+$var wire 16 3 memOut [15:0] $end
+$var wire 1 d selection $end
+$var wire 1 c enable $end
+$var reg 16 j! out2 [15:0] $end
+$upscope $end
+
+$upscope $end
+
+
+$scope module aluCtrl $end
+$var wire 2 R ALUctrl [1:0] $end
+$var wire 1 L opcode [3] $end
+$var wire 1 M opcode [2] $end
+$var wire 1 N opcode [1] $end
+$var wire 1 O opcode [0] $end
+$var reg 2 k! ALUop [1:0] $end
+$var parameter 32 l! AND [31:0] $end
+$var parameter 2 m! ADD [1:0] $end
+$var parameter 2 n! SUB [1:0] $end
+$var parameter 2 o! RSB [1:0] $end
+$upscope $end
+
+
+$scope module pcCtrl $end
+$var wire 1 L opcode [3] $end
+$var wire 1 M opcode [2] $end
+$var wire 1 N opcode [1] $end
+$var wire 1 O opcode [0] $end
+$var wire 1 e z $end
+$var wire 1 f v $end
+$var wire 1 g n $end
+$var wire 1 b pcWriteUncond $end
+$var wire 4 8 state [3:0] $end
+$var wire 1 ] writeEn $end
+$var wire 1 p! branch $end
+$var parameter 4 q! BNE [3:0] $end
+$var parameter 4 r! BNEZ [3:0] $end
+$var parameter 4 s! BEQ [3:0] $end
+$var parameter 4 t! BEQZ [3:0] $end
+$var parameter 4 u! BLT [3:0] $end
+$var parameter 4 v! BLTZ [3:0] $end
+$var parameter 4 w! BGT [3:0] $end
+$var parameter 4 x! BGTZ [3:0] $end
+$upscope $end
+
+$upscope $end
+
+$upscope $end
+
+$upscope $end
+
+$enddefinitions $end
+$dumpvars
+0!
+1"
+b0 #
+0$
+0%
+bx &
+bx '
+bx (
+bx )
+bx *
+bx +
+bx ,
+b1010 -
+b111110100 .
+0/
+10
+bx 1
+bx 2
+bx 3
+bx 4
+bx 5
+z6
+z7
+bx 8
+bz 9
+bx :
+bx ;
+bx <
+b10000 =
+bx >
+b100000000 ?
+bz @
+bz A
+bz B
+bx C
+bz D
+bz E
+bz F
+bz G
+bz H
+bz I
+bz J
+bz K
+xL
+xM
+xN
+xO
+zP
+xQ
+bx R
+bx S
+bx T
+bx U
+bz V
+xW
+xX
+xY
+xZ
+x[
+x\
+x]
+x^
+x_
+x`
+xa
+xb
+xc
+xd
+xe
+xf
+xg
+zh
+xi
+xj
+xk
+xl
+xm
+xn
+xo
+xp
+bx q
+xr
+xs
+xt
+xu
+xv
+xw
+xx
+bx y
+bx z
+bx {
+bx |
+x}
+b0 ~
+b1 !!
+b10 "!
+b11 #!
+b100 $!
+b101 %!
+b110 &!
+b111 '!
+b1000 (!
+b1001 )!
+b1010 *!
+b1011 +!
+b1100 ,!
+b1101 -!
+bx .!
+bx /!
+bx 0!
+bx 1!
+bx 2!
+bx 3!
+bx 4!
+bx 5!
+bx 6!
+bx 7!
+bx 8!
+bz 9!
+bx :!
+b0xxxxxxxxxxxxxx0 ;!
+bx <!
+bx =!
+bx >!
+bx ?!
+bx @!
+bx A!
+bx B!
+bx C!
+bx D!
+bx E!
+bz F!
+bx G!
+1H!
+bx I!
+1J!
+bx K!
+bx L!
+1M!
+bx N!
+1O!
+bx P!
+bx Q!
+bx R!
+bx S!
+bx T!
+bx U!
+b0 V!
+b1 W!
+b0 X!
+bx Y!
+b11 Z!
+b11 [!
+b1 \!
+b11 ]!
+b10000 ^!
+b10000 _!
+b10000 `!
+b0 a!
+bx b!
+b10000 c!
+bx d!
+b10000 e!
+1f!
+b0xxxxxxxxx g!
+0h!
+b0xxxxx i!
+bx j!
+bx k!
+b0 l!
+b1 m!
+b10 n!
+b11 o!
+xp!
+b1011 q!
+b1011 r!
+b1010 s!
+b1010 t!
+b1001 u!
+b1001 v!
+b1000 w!
+b1000 x!
+$end
+#5000
+1!
+1/
+b0 |
+b0 8
+0j
+0k
+0l
+0m
+b0 {
+b11 z
+0r
+0s
+0t
+b0 q
+0o
+0p
+b0 y
+1n
+1v
+1b
+1[
+b0 S
+0\
+0Q
+b0 R
+0`
+0_
+0^
+b11 T
+b0 U
+0Z
+0Y
+0X
+0W
+1]
+b0xxxxx S!
+b0xxxxxxxxx 8!
+#10000
+0!
+0/
+#15000
+1!
+1/
+b1 |
+b1 8
+0n
+xv
+1r
+1^
+xb
+0[
+x]
+#20000
+0!
+0/
+#25000
+1!
+1/
+b0 |
+b0 8
+0r
+1v
+1n
+1[
+1b
+0^
+1]
+#30000
+0!
+0/
+#35000
+1!
+1/
+b1 |
+b1 8
+0n
+xv
+1r
+1^
+xb
+0[
+x]
+#40000
+0!
+0/
+#45000
+1!
+1/
+b0 |
+b0 8
+0r
+1v
+1n
+1[
+1b
+0^
+1]
+#50000
+0"
+b1001000110100 #
+1$
+0!
+0/
+00
+b0 G!
+b0 I!
+b0 K!
+b0 L!
+b0 N!
+b0 P!
+b0 @!
+b0 =!
+b0 1
+b0 6!
+b0 7!
+b0 3!
+b0 0!
+b0 .!
+b0 /!
+b0 B!
+0L
+0M
+0N
+0O
+b0 ;
+b0 :!
+b0 ;!
+b0 1!
+b10 >!
+b0 2!
+b0 5
+0i
+0}
+0p!
+b0 E!
+b0 D!
+b10 b!
+b1001010011000 <
+b0 T!
+b10 d!
+b0 S!
+b0 g!
+b0 i!
+1n
+1v
+1o
+b0 k!
+b0 R!
+0g
+1e
+b0 5!
+b0 :
+1Q
+b10 <!
+b0 C
+b1001010011000 2
+b10 A!
+b0 8!
+b0 ?!
+#55000
+1!
+1/
+#60000
+0!
+0/
+#65000
+1!
+1/
+#70000
+0!
+0/
+#75000
+1!
+1/
+#80000
+0!
+0/
+#85000
+1!
+1/
+#90000
+0!
+0/
+#95000
+1!
+1/
+#100000
+0!
+0/

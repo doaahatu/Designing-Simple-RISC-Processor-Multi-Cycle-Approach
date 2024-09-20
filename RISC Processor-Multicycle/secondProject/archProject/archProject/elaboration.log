@@ -1,0 +1,38 @@
+Active-HDL 15.0.261.9132 2024-06-22 23:18:18
+
+Elaboration top modules:
+Verilog Module                testbench
+
+
+-----------------------------------------------------------------------------------------------
+Verilog Module          | Library     | Info | Compiler Version          | Compilation Options
+-----------------------------------------------------------------------------------------------
+testbench               | archproject |      | 15.0.261.9132 (Windows64) | -O2 -sv2k17
+computer                | archproject |      | 15.0.261.9132 (Windows64) | -O2 -sv2k17
+instructionMemory       | archproject |      | 15.0.261.9132 (Windows64) | -O2 -sv2k17
+dataMemory              | archproject |      | 15.0.261.9132 (Windows64) | -O2 -sv2k17
+CPU                     | archproject |      | 15.0.261.9132 (Windows64) | -O2 -sv2k17
+controlUnit             | archproject |      | 15.0.261.9132 (Windows64) | -O2 -sv2k17
+datapath                | archproject |      | 15.0.261.9132 (Windows64) | -O2 -sv2k17
+ALUcontrol              | archproject |      | 15.0.261.9132 (Windows64) | -O2 -sv2k17
+PCcontrol               | archproject |      | 15.0.261.9132 (Windows64) | -O2 -sv2k17
+flop                    | archproject |      | 15.0.261.9132 (Windows64) | -O2 -sv2k17
+reg_file                | archproject |      | 15.0.261.9132 (Windows64) | -O2 -sv2k17
+extender                | archproject |      | 15.0.261.9132 (Windows64) | -O2 -sv2k17
+ALU                     | archproject |      | 15.0.261.9132 (Windows64) | -O2 -sv2k17
+mux4x1                  | archproject |      | 15.0.261.9132 (Windows64) | -O2 -sv2k17
+mux2x1                  | archproject |      | 15.0.261.9132 (Windows64) | -O2 -sv2k17
+extender2               | archproject |      | 15.0.261.9132 (Windows64) | -O2 -sv2k17
+-----------------------------------------------------------------------------------------------
+
+-----------------------------------------------------------------------------------------------
+Library                 | Comment
+-----------------------------------------------------------------------------------------------
+archproject             | None
+-----------------------------------------------------------------------------------------------
+
+
+Simulation Options: asim -O5 +access +w_nets +accb +accr +access +r +access +r+w testbench
+
+
+The performance of simulation is reduced. Version Student Edition

@@ -1,0 +1,48 @@
+[Project]
+Current Flow=Multivendor
+VCS=0
+version=4
+Current Config=compile
+[Configurations]
+compile=archProject
+[Library]
+archProject=.\archProject\archProject.lib
+[$LibMap$]
+archProject=.
+Active_lib=
+[Settings]
+FLOW_TYPE=HDL
+LANGUAGE=VERILOG
+REFRESH_FLOW=1
+FLOWTOOLS=ONLY_IMPL
+ON_SERVERFARM_SYNTH=0
+ON_SERVERFARM_IMPL=0
+ON_SERVERFARM_SIM=0
+AccessACCB=1
+AccessACCR=1
+AccessReadTopLevel=0
+AccessRead=1
+AccessReadWrite=1
+AccessReadWriteSLP=1
+SimulationAccessReadPaths=
+SimulationAccessReadModules=
+SimulationAccessReadWritePaths=
+SimulationAccessReadWriteModules=
+SimulationAccessNetsPaths=
+SimulationAccessNetsModules=
+[IMPLEMENTATION]
+UCF=
+[Files]
+/edited.v=-1
+/wavetest.asdb=-1
+/wavetest.awc=-1
+[Files.Data]
+.\src\archProject2.v=Verilog Source Code
+.\src\copy2.v=Verilog Source Code
+.\src\edited.v=Verilog Source Code
+.\src\wavetest.asdb=Accelerated Waveform File
+.\src\wavetest.awc=Accelerated Waveform Configuration
+[HierarchyViewer]
+HierarchyInformation=
+ShowHide=ShowTopLevel
+Selected=

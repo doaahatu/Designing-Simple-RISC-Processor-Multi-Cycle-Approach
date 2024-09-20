@@ -1,0 +1,216 @@
+timestamp=1719089134638
+
+[~A]
+C:/Users/Asus/Downloads/secondProject/secondProject/archProject/src/edited.v=0*934262*940715
+C:/Users/DR/Desktop/secondProject/secondProject/archProject/src/edited.v=0*1489703*1497144
+C:/Users/DR/doaa/third year, second sem/Arch/project2/code/secondProject/archProject/src/archProject2.v=0*518750*522990
+C:/Users/DR/doaa/third year, second sem/Arch/project2/code/secondProject/archProject/src/edited.v=0*578889*585651
+LastVerilogToplevel=testbench
+ModifyID=123
+Version=74
+
+[~MFT]
+0=22|0archProject.mgf|1497144|837918
+1=36|1archProject.mgf|5130141|5067468
+3=72|3archProject.mgf|3510620|3467027
+
+[$root]
+A/$root=22|||1*5086716
+BinW64/$root=3*3478574
+SLP=3*3478689
+Version=15.0.261.9132 (Windows64)|0000000b789cd3f53752d02d2e33ca3634070010af02ea|c73a565f2ade592f8ac1c68f484c9216dd71df01077ca092b31e13b76b636704
+
+[ALU]
+A/ALU=22|../src/edited.v|281|1*5102008
+BinW64/ALU=3*3492511
+R=../src/edited.v|281
+SLP=3*3493911
+Version=15.0.261.9132 (Windows64)|0000000b789cd3f53752d02d2e33ca3634070010af02ea|b3eb40c25b2a3c0379c7730185183eece05a7fec5e9ddb10e09066077c1b38c1
+
+[ALUcontrol]
+A/ALUcontrol=22|../src/edited.v|316|1*5104096
+BinW64/ALUcontrol=3*3494562
+R=../src/edited.v|316
+SLP=3*3496185
+Version=15.0.261.9132 (Windows64)|0000000b789cd3f53752d02d2e33ca3634070010af02ea|51419276646de8371fe9642db7a160f8ddbcfc6c4899e54abc84cc00f70a66dca4851bf00819e5cfa7b3c383b31de901
+
+[CPU]
+A/CPU=22|../src/edited.v|563|1*5110662
+BinW64/CPU=3*3506241
+R=../src/edited.v|563
+SLP=3*3506354
+Version=15.0.261.9132 (Windows64)|0000000b789cd3f53752d02d2e33ca3634070010af02ea|8e7b05e79f53f2dfbaf3f223a151a5e155846897e948ddc4b1ba752ab673212e
+
+[MUX2x1]
+A/MUX2x1=22|../src/archProject2.v|232|1*1811063
+BinW64/MUX2x1=3*1202230
+R=../src/archProject2.v|232
+SLP=3*1202779
+Version=15.0.261.9132 (Windows64)|0000000b789cd3f53752d02d2e33ca3634070010af02ea|4f05331ff7bff6545ed7e6b8d81843655f7d15e95ac3e2d776841340db7ee1a6
+
+[MUX4x1]
+A/MUX4x1=22|../src/archProject2.v|248|1*1812169
+BinW64/MUX4x1=3*1203031
+R=../src/archProject2.v|248
+SLP=3*1203641
+Version=15.0.261.9132 (Windows64)|0000000b789cd3f53752d02d2e33ca3634070010af02ea|f9f0b4577ddf9405ef4a1a402395c05327869a25e74fcccba58ad85a83952e55
+
+[PCcontrol]
+A/PCcontrol=22|../src/edited.v|182|1*5095966
+BinW64/PCcontrol=3*3487031
+R=../src/edited.v|182
+SLP=3*3488145
+Version=15.0.261.9132 (Windows64)|0000000b789cd3f53752d02d2e33ca3634070010af02ea|d30de90e7d5374069c82f6ed9772ae25f4037a77f4e1be0707c1a63701b1499b968d0546b54e642e23d93a43058d0674
+
+[aluControl]
+A/aluControl=22|../src/archProject2.v|302|1*1815321
+BinW64/aluControl=3*1206489
+R=../src/archProject2.v|302
+SLP=3*1207279
+Version=15.0.261.9132 (Windows64)|0000000b789cd3f53752d02d2e33ca3634070010af02ea|75336b7f64e1e5789ef2bb6343aea99e87d3cc53db14e5f5103308d1f1241387e079064f704056ff804159e89de56cd8
+
+[clock]
+A/clock=22|../src/edited.v|220|1*5098538
+BinW64/clock=3*3488611
+R=../src/edited.v|220
+SLP=3*3489275
+Version=15.0.261.9132 (Windows64)|0000000b789cd3f53752d02d2e33ca3634070010af02ea|b5908d396eb110753762aa81bb2baad03ec1df6b3d010c225f63f5c0a269db2b
+
+[computer]
+A/computer=22|../src/edited.v|674|1*5127720
+BinW64/computer=3*3508480
+R=../src/edited.v|674
+SLP=3*3508598
+Version=15.0.261.9132 (Windows64)|0000000b789cd3f53752d02d2e33ca3634070010af02ea|91b79c5c7cf37aba711b5cd8006af8273de928612a4f300a0130f3a4cd5eb21f517640626ea0fc6109ca1c36ba76558f
+
+[computer_tb]
+A/computer_tb=22|../src/edited.v|735|1*195014
+BinW64/computer_tb=3*135717
+R=../src/edited.v|735
+SLP=3*137006
+Version=15.0.261.9132 (Windows64)|0000000b789cd3f53752d02d2e33ca3634070010af02ea|425b5102aefdfcd71f4b1f2590f04f940cae3d10bf23e1893a42460f584775bf8047244a038cf4790bc1bc09a4fad357
+
+[control]
+A/control=22|../src/archProject2.v|332|1*1816435
+BinW64/control=3*1207824
+R=../src/archProject2.v|332
+SLP=3*1210498
+Version=15.0.261.9132 (Windows64)|0000000b789cd3f53752d02d2e33ca3634070010af02ea|f2cabf5e9d8860133c44841e25d9d38726527262ddaa47cb266f3a3c4d9b973af74ef45720cc177e6af3f74b4fcbd6a1
+
+[controlUnit]
+A/controlUnit=22|../src/edited.v|354|1*5105816
+BinW64/controlUnit=3*3496573
+R=../src/edited.v|354
+SLP=3*3503318
+Version=15.0.261.9132 (Windows64)|0000000b789cd3f53752d02d2e33ca3634070010af02ea|46b704757761f72fba12d18169f10673589928b93ab93a7bd15df33582cd62664bd2f71758ccefde4d06a95eb5658831
+
+[cpu]
+A/cpu=22|../src/archProject2.v|392|1*1821044
+BinW64/cpu=3*1211309
+R=../src/archProject2.v|392
+SLP=3*1211422
+Version=15.0.261.9132 (Windows64)|0000000b789cd3f53752d02d2e33ca3634070010af02ea|13d2a6012ae176ed67c47d3a5127b0604aa08b9b4f369bd531ad2bcd869ff448
+
+[dataMemory]
+A/dataMemory=22|../src/edited.v|115|1*5092676
+BinW64/dataMemory=3*3483875
+R=../src/edited.v|115
+SLP=3*3485398
+Version=15.0.261.9132 (Windows64)|0000000b789cd3f53752d02d2e33ca3634070010af02ea|0f52dcf82f7a4029ac342e67e8db7b90633dfbca2f406df17328f8dc8a250fb9ec26b608eacf26e50d53fc7a9e8ea31c
+
+[datapath]
+A/datapath=22|../src/edited.v|738|1*5117025
+BinW64/datapath=3*3506575
+R=../src/edited.v|738
+SLP=3*3507639
+Version=15.0.261.9132 (Windows64)|0000000b789cd3f53752d02d2e33ca3634070010af02ea|0690e804e35d05b935f6e645b24395cb3535cc8d9627fb93a836e16c28de74555de4681d044092b9f0a0daf16d04b6f8
+
+[extender]
+A/extender=22|../src/edited.v|9|1*5087122
+BinW64/extender=3*3478757
+R=../src/edited.v|9
+SLP=3*3479518
+Version=15.0.261.9132 (Windows64)|0000000b789cd3f53752d02d2e33ca3634070010af02ea|37d0dd7f7ecfd1896788353323fa68099d8b4e8ef1374421143aa6249ef85470288506d891aad4ac703442fc62a91ae0
+
+[extender2]
+A/extender2=22|../src/edited.v|36|1*5088266
+BinW64/extender2=3*3479939
+R=../src/edited.v|36
+SLP=3*3480671
+Version=15.0.261.9132 (Windows64)|0000000b789cd3f53752d02d2e33ca3634070010af02ea|2ab5b0218ae81bd476ae8dd2824a5063d2eeb0605503e472bb59561187005bc89a503636a231f3f5b3b01ee1f16b8148
+
+[flop]
+A/flop=22|../src/edited.v|162|1*5094655
+BinW64/flop=3*3486311
+R=../src/edited.v|162
+SLP=3*3486770
+Version=15.0.261.9132 (Windows64)|0000000b789cd3f53752d02d2e33ca3634070010af02ea|0ca17c272be44b6265f55658ef247348e067f084d231449e959a033e29558435
+
+[instructionMemory]
+A/instructionMemory=22|../src/edited.v|90|1*5091248
+BinW64/instructionMemory=3*3482383
+R=../src/edited.v|90
+SLP=3*3483475
+Version=15.0.261.9132 (Windows64)|0000000b789cd3f53752d02d2e33ca3634070010af02ea|2b14bce026953b8dd1e6dfba2f813208905cf18b4c62110514c8f133a6f262392d3e0d42229815fd8bf395901a4433e0
+
+[mux2x1]
+A/mux2x1=22|../src/edited.v|241|1*5099259
+BinW64/mux2x1=3*3489592
+R=../src/edited.v|241
+SLP=3*3491066
+Version=15.0.261.9132 (Windows64)|0000000b789cd3f53752d02d2e33ca3634070010af02ea|269c48f88c4a6630b0dac62e83881d97c1a316d5b5df99b1fb149fa33e3bb68b
+
+[mux4x1]
+A/mux4x1=22|../src/edited.v|256|1*5100482
+BinW64/mux4x1=3*3491252
+R=../src/edited.v|256
+SLP=3*3492186
+Version=15.0.261.9132 (Windows64)|0000000b789cd3f53752d02d2e33ca3634070010af02ea|e6b717cacdef1e1cfddf87fa026ec1016f07bb780dfbd5734ccb86a535e68345
+
+[reg_file]
+A/reg_file=22|../src/edited.v|59|1*5089401
+BinW64/reg_file=3*3481036
+R=../src/edited.v|59
+SLP=3*3482012
+Version=15.0.261.9132 (Windows64)|0000000b789cd3f53752d02d2e33ca3634070010af02ea|e1bf101584035ea218ba3df38bafe06a21fbe190f4161edc23c1a73ed41f53dd052b53df31c52caafe6b478a93251460
+
+[tb_computer]
+A/tb_computer=22|../src/edited.v|12|1*1412562
+BinW64/tb_computer=3*937077
+R=../src/edited.v|12
+SLP=3*938547
+Version=15.0.261.9132 (Windows64)|0000000b789cd3f53752d02d2e33ca3634070010af02ea|17e8acc8a92dba44cabf44f239a432b50e46c9b84a1e836d5af59fd628bc503c725fd92c51d063810423e33e81ba1459
+
+[testbench]
+A/testbench=22|../src/edited.v|850|1*5130141
+BinW64/testbench=3*3508703
+R=../src/edited.v|850
+SLP=3*3510620
+Version=15.0.261.9132 (Windows64)|0000000b789cd3f53752d02d2e33ca3634070010af02ea|9c08cd30fe0f9550ac0d051aa32c9ba5030c5f4de3ffa3c97f58c5528f1d79139214e065be1dba105c5c6dd613c7a252
+
+[~U]
+$root=12|0*1483949|
+ALU=12|0*1487110|
+ALUcontrol=12|0*1487363|
+CPU=12|0*1488185|
+MUX2x1=12|0*516999|
+MUX4x1=12|0*517218|
+PCcontrol=12|0*1486156|
+aluControl=12|0*517689|
+clock=12|0*1486463|
+computer=12|0*1489119|
+computer_tb=12|0*49167||0x10
+control=12|0*517910|
+controlUnit=12|0*1487636|
+cpu=12|0*518336||0x10
+dataMemory=12|0*1485658|
+datapath=12|0*1488572|
+extender=12|0*1484675|
+extender2=12|0*1484914|
+flop=12|0*1485932|
+instructionMemory=12|0*1485408|
+mux2x1=12|0*1486631|
+mux4x1=12|0*1486865|
+reg_file=12|0*1485150|
+tb_computer=12|0*403852||0x10
+testbench=12|0*1489404||0x10
